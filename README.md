@@ -1,4 +1,4 @@
-# [Título del trabajo]
+# Escapando del Galaxy Kebab
 
 Vamos a realizar un scape room en el que haya que salir del restaurante Galaxy Kebab. Durante el juego se obtendrán recompensas y penalizaciones. La dificultad será variable al igual que las pruebas. 
 
