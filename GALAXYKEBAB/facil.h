@@ -1,4 +1,4 @@
 void juegofacil();
 void fin();
-int puntosdevidasuma(int vidas);
-int puntosdevidaresta(int vidas);
+int puntosdevidasumafac(int vidas);
+int puntosdevidarestafac(int vidas);
