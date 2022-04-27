@@ -1,5 +1,4 @@
 void juegodificil();
-void fin();
-int puntosdevidasumadif(int vidas);
-int puntosdevidarestadif(int vidas);
+void sala3();
+void sala4();
 
