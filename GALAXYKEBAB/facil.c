@@ -36,24 +36,55 @@ void sala1()
 {
     // descripcion sala    printf("Te despiertas en lo que parece un sotano. No es una sala muy grande, pero esta muy sucia. Es,\n");
     //printf("");
-    int i=0;
+    int d=0;
+    buclesala1:
     do
     {
-      scanf(" %d", &i);
+      scanf(" %d", &d);
     }
-    while((i<1)||(i>7));
-    switch(i)
+    while((d<1)||(d>7));
+    switch(d)
     {
     case 1:
         {
+            goto buclesala1;
             break;
-
+        }
+    case 2:
+        {
+            goto finalsala1;
+            break;
+        }
+    case 3:
+        {
+            goto buclesala1;
+            break;
+        }
+    case 4:
+        {
+            goto buclesala1;
+            break;
+        }
+    case 5:
+        {
+            goto buclesala1;
+            break;
+        }
+    case 6:
+        {
+            goto buclesala1;
+            break;
+        }
+    case 7:
+        {
+            goto buclesala1;
+            break;
         }
     }
-
-
-
+    finalsala1:
+        printf("sales");
 }
+
 void sala2()
 {
     printf("HJGHDCGJFVHKCRJHCRKHCFKFC H.\n");
