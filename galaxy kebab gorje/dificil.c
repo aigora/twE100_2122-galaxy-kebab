@@ -27,6 +27,7 @@ void sala3(int vidas[])
     printf("Has encontrado lo que parece un cuadro de luces, pero...\n");
     system("PAUSE");
     printf("Para poder encender los plomos deberas contestar una pregunta.\n");
+
     printf("");
     printf("Se encienden las luces de repente y quedas cegado unos segundos.\n");
 
