@@ -34,7 +34,7 @@ void fin()
 }
 void sala1()
 {
-    // descripcion sala    printf("Te despiertas en lo que parece un sotano. No es una sala muy grande, pero esta muy sucia. Es,\n");
+    printf("Te despiertas en lo que parece un sotano. No es una sala muy grande, pero esta muy sucia. Es,\n");
     //printf("");
     int d=0;
     buclesala1:
