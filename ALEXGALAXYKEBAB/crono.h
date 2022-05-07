@@ -1,0 +1,1 @@
+int cronosec(int iniciofin);
