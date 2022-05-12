@@ -66,12 +66,49 @@ void sala1(int vidas[])
                  printf("Ya has mirado aqui.\n");
                 goto buclesala1;
             }
+            char palabra1[20];
+            char pregunta1[]="cuatro";
             printf("Ves una caja con tomates. Dentro hay un papel con la siguiente prueba:\n");
             printf("Miras detras de la tuberia roja y encuentras una llave que podria abrir la puerta. \n");
-            llave++;
+             h=0, j=0;
+            do
+    {
+
+    scanf("%s",palabra1);
+    a=strcmp(palabra1,pregunta1);
+    if(a!=0)
+    {
+    h++;
+    printf("MAL ,Te quedan %d intentos.\n",3-h);
+    if(h==3)
+    {
+        printf("Has perdido una vida!\n");
+        vidas[0]=puntosdevidarestafac(vidas);
+    }
+    j++;
+    }
+    if(a==0)
+    {
+        printf("CORRECTO.\n");
+        if(h==0)
+        {
+            printf("Has ganado una vida!\n");
+            vidas[0]=puntosdevidasumafac(vidas);
+        }
+         }
+    }while((a!=0)&&(j<3));
+    printf("Tienes %d vidas.\n",vidas[0]);
+    if(vidas[0]==0 || vidas[0]<0)
+    {
+        fin();
+    }
+    else
+    {
+         llave++;
             caso1++;
             goto buclesala1;
-            break;
+    }
+           break;
         }
 
     case 2:
@@ -81,10 +118,47 @@ void sala1(int vidas[])
                  printf("Ya has mirado aqui.\n");
                 goto buclesala1;
             }
+            char palabra2[20];
+            char pregunta2[]="cuatro";
              printf("Ves una caja con unas lechugas. Una de ellas es muy rara, asi que la coges para inspeccionarla.\n");
             printf("Al cogerla te das cuenta de que es de plastico y que lleva escrito lo siguiente: \n");
-            caso2++;
+             h=0, j=0;
+            do
+    {
+
+    scanf("%s",palabra2);
+    a=strcmp(palabra2,pregunta2);
+    if(a!=0)
+    {
+    h++;
+    printf("MAL ,Te quedan %d intentos.\n",3-h);
+    if(h==3)
+    {
+        printf("Has perdido una vida!\n");
+        vidas[0]=puntosdevidarestafac(vidas);
+    }
+    j++;
+    }
+    if(a==0)
+    {
+        printf("CORRECTO.\n");
+        if(h==0)
+        {
+            printf("Has ganado una vida!\n");
+            vidas[0]=puntosdevidasumafac(vidas);
+        }
+         }
+    }while((a!=0)&&(j<3));
+    printf("Tienes %d vidas.\n",vidas[0]);
+    if(vidas[0]==0 || vidas[0]<0)
+    {
+        fin();
+    }
+    else
+    {
+        caso2++;
             goto buclesala1;
+    }
             break;
         }
     case 3:
@@ -94,10 +168,47 @@ void sala1(int vidas[])
                  printf("Ya has mirado aqui.\n");
                 goto buclesala1;
             }
-            printf("Ves una caja con unos cuantos panes. Tienes algo de hambre asi que aprovechas y te comes uno.");
-            printf("En el  \n");
-            caso3++;
+            char palabra3[20];
+            char pregunta3[]="cuatro";
+            printf("Ves una caja con unos cuantos panes. Tienes algo de hambre asi que aprovechas y te comes unos.");
+            printf("En el fondo de la caja encuentras la siguiente pregunta: \n");
+             h=0, j=0;
+            do
+    {
+
+    scanf("%s",palabra3);
+    a=strcmp(palabra3,pregunta3);
+    if(a!=0)
+    {
+    h++;
+    printf("MAL ,Te quedan %d intentos.\n",3-h);
+    if(h==3)
+    {
+        printf("Has perdido una vida!\n");
+        vidas[0]=puntosdevidarestafac(vidas);
+    }
+    j++;
+    }
+    if(a==0)
+    {
+        printf("CORRECTO.\n");
+        if(h==0)
+        {
+            printf("Has ganado una vida!\n");
+            vidas[0]=puntosdevidasumafac(vidas);
+        }
+         }
+    }while((a!=0)&&(j<3));
+    printf("Tienes %d vidas.\n",vidas[0]);
+    if(vidas[0]==0 || vidas[0]<0)
+    {
+        fin();
+    }
+    else
+    {
+        caso3++;
             goto buclesala1;
+    }
             break;
         }
     case 4:
