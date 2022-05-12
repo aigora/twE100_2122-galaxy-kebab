@@ -16,7 +16,6 @@ void juegofacil()
     printf("Despues de estar un rato comiendo, te empiezas a sentir algo mareado, todo se empieza a mover, te caes y pierdes el conocimiento\n");
     system("PAUSE");
     sala1(vidas);
-    sala5(vidas);
 
 }
 int puntosdevidasumafac(int vidas[])
@@ -343,6 +342,7 @@ void sala1(int vidas[])
      finalsala1:
           printf("Tras pasar ves unas escaleras y subes en busca de una salida.\n");
    printf("Has tardado %ld segundos en pasarte la sala 1.\n",cronosec(1));
+   sala5(vidas);
     }
 }
 
