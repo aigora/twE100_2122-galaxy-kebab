@@ -67,9 +67,10 @@ void sala1(int vidas[])
                 goto buclesala1;
             }
             char palabra1[20];
-            char pregunta1[]="cuatro";
-            printf("Ves una caja con tomates. Dentro hay un papel con la siguiente prueba:\n");
-            printf("Miras detras de la tuberia roja y encuentras una llave que podria abrir la puerta. \n");
+            char pregunta1[]="10000";
+            printf("Ves una caja con tomates. Dentro hay un papel con la siguiente pregunta:\n");
+            printf("Cuantos tipos de tomates existen? 5000, 10000 o 15000\n");
+            printf("(responde contestando el numero) \n");
              h=0, j=0;
             do
     {
@@ -104,9 +105,13 @@ void sala1(int vidas[])
     }
     else
     {
-         llave++;
-            caso1++;
-            goto buclesala1;
+        printf("Tras responder la pregunta en voz alta suenan unos altavoces:\n");
+        printf("Lo estas haciendo muy bien. La tuberia roja no te llama la atencion?\n");
+        system("PAUSE");
+        printf("Miras detras de la tuberia roja y encuentras una llave que podria abrir la puerta. \n");
+        llave++;
+        caso1++;
+        goto buclesala1;
     }
            break;
         }
@@ -119,9 +124,11 @@ void sala1(int vidas[])
                 goto buclesala1;
             }
             char palabra2[20];
-            char pregunta2[]="cuatro";
+            char pregunta2[]="aliento";
              printf("Ves una caja con unas lechugas. Una de ellas es muy rara, asi que la coges para inspeccionarla.\n");
-            printf("Al cogerla te das cuenta de que es de plastico y que lleva escrito lo siguiente: \n");
+            printf("Al cogerla te das cuenta de que es de plastico y que lleva la siguiente adivinanza escrita: \n");
+            printf("Si lo ves es invierno, si lo pierdes pereces, cada día lo tomas mas de 1000 veces. Qué es?\n");
+            printf("(escribe solo la palabra en minusculas)");
              h=0, j=0;
             do
     {
@@ -169,9 +176,11 @@ void sala1(int vidas[])
                 goto buclesala1;
             }
             char palabra3[20];
-            char pregunta3[]="cuatro";
+            char pregunta3[]="1895";
             printf("Ves una caja con unos cuantos panes. Tienes algo de hambre asi que aprovechas y te comes unos.");
             printf("En el fondo de la caja encuentras la siguiente pregunta: \n");
+            printf("En que año se invento la hamburguesa? En 1895, en 1912 o en 1930?\n");
+            printf("(responde contestando el año) \n");
              h=0, j=0;
             do
     {
@@ -234,10 +243,10 @@ void sala1(int vidas[])
                 goto buclesala1;
             }
             char palabra5[20];
-            char pregunta5[]="cuatro";
+            char pregunta5[]="1963";
             printf("Abres la nevera. No hay mas que varios paquetes de filetes de carne y un brick de leche. te fijas en la pegatina del brick y cuentras esto:\n");
-            printf("Cuanto dura un brick de leche abierto en la nevera? \n");
-            printf("(responde contestando solo el numero en letras) \n");
+            printf("En que año se invento el tetra brick? En 1941, en 1957 o en 1963?\n");
+            printf("(responde contestando el año) \n");
             h=0, j=0;
             do
     {
@@ -287,7 +296,7 @@ void sala1(int vidas[])
              char palabra6[20];
             char pregunta6[]="turquia";
             printf("Vas al ordenador y lo enciendes. En la pantalla encuentras la siguiente pregunta: \n");
-            printf("¿De que pais es originario el kebab?\n");
+            printf("De que pais es originario el kebab?\n");
             printf("(escribe el pais con todas las letras minusculas y sin tildes)\n");
             h=0, j=0;
             do
