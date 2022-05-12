@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <string.h>
-#include "facil.h"
+#include <time.h>
 #include <stdlib.h>
+#include "facil.h"
+#include "crono.h"
+#include "ahorcado.h"
+
 void juegofacil()
 {
-    char decision;
     int vidas[1]={5};
      printf("Es sabado por la mañana. Has estado estudiando y como hace un buen dia decides irte a comer al Galaxy Kebab\n");
     printf("Cuando llegas el cocinero te saluda amablemente:\n");
@@ -13,7 +16,6 @@ void juegofacil()
     printf("El cocinero te da el durum y te sientas a comer tranquilamente\n");
     printf("Despues de estar un rato comiendo, te empiezas a sentir algo mareado, todo se empieza a mover, te caes y pierdes el conocimiento\n");
     sala1(vidas);
-
 }
 int puntosdevidasumafac(int vidas[])
 {
@@ -32,11 +34,11 @@ void fin()
 }
 void sala1(int vidas[])
 {
-   //printf(" \n");
+ //printf(" \n");
     fflush(stdin);
     cronosec(0);
    int d, j=0, h=0, a;
-   int caso1=0,caso2=0,caso3=0,caso4=0,caso5=0,caso6=0, llave=0;
+   int caso1=0,caso2=0,caso3=0,caso5=0,caso6=0, llave=0;
     printf("Te despiertas en lo que parece un sotano. No es una sala muy grande, pero hace frio. Ves una gran estanteria con cajas, una nevera y \n");
     printf("unas tuberias con goteras. Tambien hay una especie de despacho con una silla, una mesa con un ordenador y un corcho con recortes y fotos. \n");
     printf("En un lado hay una puerta con lo que parecen arañazos de una persona. Fijandote en la mesa encuentras varias grabadoras.\n ");
@@ -344,7 +346,7 @@ void sala1(int vidas[])
 }
 void sala2(int vidas[])
 {
-     cronosec(0);
+    cronosec(0);
     system("PAUSE");
     system("cls");
     printf("Terminas de subir las escaleras y llegas a una cocina,\n");
@@ -556,10 +558,12 @@ void sala2(int vidas[])
         }
         }
         }
+
 }
 
 void sala5(int vidas[])
 {
+     printf("%d\n",vidas[0]);
 
 }
 
