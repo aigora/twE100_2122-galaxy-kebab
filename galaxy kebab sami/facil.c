@@ -41,8 +41,8 @@ void sala1(int vidas[])
    int d, j=0, h=0, a;
    int caso1=0,caso2=0,caso3=0,caso4=0,caso5=0,caso6=0, llave=0;
     printf("Te despiertas en lo que parece un sotano. No es una sala muy grande, pero hace frio. Ves una gran estanteria con cajas, una nevera y \n");
-    printf("unas tuberias con goteras. Tambien hay una especie de despacho con una silla, una mesa con un ordenador y un corcho con recortes y fotos. \n");
-    printf("En un lado hay una puerta con lo que parecen arañazos de una persona. Fijandote en la mesa encuentras varias grabadoras.\n ");
+    printf("unas tuberias con goteras. Tambien hay una especie de despacho con una silla, una mesa con un ordenador y un corcho con recortes y fotos.\n");
+    printf("En un lado hay una puerta con lo que parecen arañazos de una persona. Fijandote en la mesa encuentras varias grabadoras.\n");
     printf("Todas estan vacias menos una. En ella reproduces un mensaje en un idioma desconocido pero en una parte entiendes con complicaciones \n");
     printf("algo de un secuestro y de que la persona tendra que ir resolviendo pruebas para salir. Fijandote en todos los recobecos de la sala te das\n");
     printf("cuenta de que en las esquinas superiores hay unos altavoces. \n");
@@ -127,7 +127,7 @@ void sala1(int vidas[])
              printf("Ves una caja con unas lechugas. Una de ellas es muy rara, asi que la coges para inspeccionarla.\n");
             printf("Al cogerla te das cuenta de que es de plastico y que lleva la siguiente adivinanza escrita: \n");
             printf("Si lo ves es invierno, si lo pierdes pereces, cada día lo tomas mas de 1000 veces. Qué es?\n");
-            printf("(escribe solo la palabra en minusculas)");
+            printf("(escribe solo la palabra en minusculas)\n");
              h=0, j=0;
             do
     {
@@ -221,7 +221,12 @@ void sala1(int vidas[])
         }
     case 4:
         {
-             printf("Ves una puerta. Es de madera y tiene muchos arañazos, como si alguien ya hubiera estado encerrado aqui. La puerta esta cerrada.\n");
+            if(caso4==0)
+            {
+                printf("Ves una puerta. Es de madera y tiene muchos arañazos, como si alguien ya hubiera estado encerrado aqui. La puerta esta cerrada.\n");
+                caso4++;
+            }
+
             if(llave==0)
             {
                 printf("Hace fala una llave para abrirla\n");
@@ -342,7 +347,7 @@ void sala1(int vidas[])
      finalsala1:
           printf("Tras pasar ves unas escaleras y subes en busca de una salida.\n");
    printf("Has tardado %ld segundos en pasarte la sala 1.\n",cronosec(1));
-   sala2(vidas);
+   //sala2(vidas);
     }
 }
 
