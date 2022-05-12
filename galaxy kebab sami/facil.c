@@ -342,7 +342,7 @@ void sala1(int vidas[])
      finalsala1:
           printf("Tras pasar ves unas escaleras y subes en busca de una salida.\n");
    printf("Has tardado %ld segundos en pasarte la sala 1.\n",cronosec(1));
-   sala5(vidas);
+   sala2(vidas);
     }
 }
 
