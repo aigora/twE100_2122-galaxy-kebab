@@ -2,6 +2,7 @@
 #include <string.h>
 #include "facil.h"
 #include <stdlib.h>
+#include "crono.h"
 
 void juegofacil()
 {
@@ -36,7 +37,10 @@ void fin()
 void sala1(int vidas[])
 {
     //printf(" \n");
-    int d, j=0, h=0, a, llave=0;
+    fflush(stdin);
+    cronosec(0);
+   int d, j=0, h=0, a;
+   int caso1=0,caso2=0,caso3=0,caso4=0,caso5=0,caso6=0, llave=0;
     printf("Te despiertas en lo que parece un sotano. No es una sala muy grande, pero hace frio. Ves una gran estanteria con cajas, una nevera y \n");
     printf("unas tuberias con goteras. Tambien hay una especie de despacho con una silla, una mesa con un ordenador y un corcho con recortes y fotos. \n");
     printf("En un lado hay una puerta con lo que parecen arañazos de una persona. Fijandote en la mesa encuentras varias grabadoras.\n ");
@@ -52,35 +56,53 @@ void sala1(int vidas[])
         printf("Para indicar lo que quieres mirar escribe solo el numero del objeto \n");
         scanf("%d",&d);
     }
-    while((d<1)||(d>6));
+        while((d<1)||(d>6));
     switch(d)
     {
     case 1:
         {
+            if(caso1!=0)
+            {
+                 printf("Ya has mirado aqui.\n");
+                goto buclesala1;
+            }
             printf("Ves una caja con tomates. Dentro hay un papel con la siguiente prueba:\n");
-
             printf("Miras detras de la tuberia roja y encuentras una llave que podria abrir la puerta. \n");
             llave++;
+            caso1++;
             goto buclesala1;
             break;
         }
 
     case 2:
         {
-            printf("Ves una caja con unas lechugas. Una de ellas es muy rara, asi que la coges para inspeccionarla.\n");
+             if(caso2!=0)
+            {
+                 printf("Ya has mirado aqui.\n");
+                goto buclesala1;
+            }
+             printf("Ves una caja con unas lechugas. Una de ellas es muy rara, asi que la coges para inspeccionarla.\n");
             printf("Al cogerla te das cuenta de que es de plastico y que lleva escrito lo siguiente: \n");
+            caso2++;
             goto buclesala1;
             break;
         }
     case 3:
         {
+             if(caso3!=0)
+            {
+                 printf("Ya has mirado aqui.\n");
+                goto buclesala1;
+            }
             printf("Ves una caja con unos cuantos panes. Tienes algo de hambre asi que aprovechas y te comes uno.");
+            printf("En el  \n");
+            caso3++;
             goto buclesala1;
             break;
         }
     case 4:
         {
-            printf("Ves una puerta. Es de madera y tiene muchos arañazos, como si alguien ya hubiera estado encerrado aqui. La puerta esta cerrada.\n");
+             printf("Ves una puerta. Es de madera y tiene muchos arañazos, como si alguien ya hubiera estado encerrado aqui. La puerta esta cerrada.\n");
             if(llave==0)
             {
                 printf("Hace fala una llave para abrirla\n");
@@ -95,26 +117,29 @@ void sala1(int vidas[])
         }
     case 5:
         {
+             if(caso5!=0)
+            {
+                printf("Ya has mirado aqui.\n");
+                goto buclesala1;
+            }
+            char palabra5[20];
+            char pregunta5[]="cuatro";
             printf("Abres la nevera. No hay mas que varios paquetes de filetes de carne y un brick de leche. te fijas en la pegatina del brick y cuentras esto:\n");
-            goto buclesala1;
-            break;
-        }
-    case 6:
-        {
-            char palabra[20];
-            char pregunta1[]="mesa";
-            printf("Vas al ordenador y lo enciendes. En la pantalla encuentras lo siguiente: \n");
+            printf("Cuanto dura un brick de leche abierto en la nevera? \n");
+            printf("(responde contestando solo el numero en letras) \n");
+            h=0, j=0;
             do
     {
 
-    scanf("%s",palabra);
-    a=strcmp(palabra,pregunta1);
+    scanf("%s",palabra5);
+    a=strcmp(palabra5,pregunta5);
     if(a!=0)
     {
     h++;
-    printf("MAL ,Te quedan %d.\n",3-h);
+    printf("MAL ,Te quedan %d intentos.\n",3-h);
     if(h==3)
     {
+        printf("Has perdido una vida!\n");
         vidas[0]=puntosdevidarestafac(vidas);
     }
     j++;
@@ -124,9 +149,10 @@ void sala1(int vidas[])
         printf("CORRECTO.\n");
         if(h==0)
         {
+            printf("Has ganado una vida!\n");
             vidas[0]=puntosdevidasumafac(vidas);
         }
-    }
+         }
     }while((a!=0)&&(j<3));
     printf("Tienes %d vidas.\n",vidas[0]);
     if(vidas[0]==0 || vidas[0]<0)
@@ -134,15 +160,67 @@ void sala1(int vidas[])
         fin();
     }
     else
-        {
-            goto buclesala1;
+    {
+        caso5++;
+        goto buclesala1;
+    }
+            break;
         }
+    case 6:
+        {
+             if(caso6!=0)
+            {
+                 printf("Ya has mirado aqui.\n");
+                goto buclesala1;
+            }
+             char palabra6[20];
+            char pregunta6[]="turquia";
+            printf("Vas al ordenador y lo enciendes. En la pantalla encuentras la siguiente pregunta: \n");
+            printf("¿De que pais es originario el kebab?\n");
+            printf("(escribe el pais con todas las letras minusculas y sin tildes)\n");
+            h=0, j=0;
+            do
+    {
+
+    scanf("%s",palabra6);
+    a=strcmp(palabra6,pregunta6);
+    if(a!=0)
+    {
+    h++;
+    printf("MAL ,Te quedan %d intentos.\n",3-h);
+    if(h==3)
+    {
+        printf("Has perdido una vida!\n");
+        vidas[0]=puntosdevidarestafac(vidas);
+    }
+    j++;
+    }
+    if(a==0)
+    {
+        printf("CORRECTO.\n");
+        if(h==0)
+        {
+            printf("Has ganado una vida!\n");
+            vidas[0]=puntosdevidasumafac(vidas);
+        }
+         }
+    }while((a!=0)&&(j<3));
+    printf("Tienes %d vidas.\n",vidas[0]);
+    if(vidas[0]==0 || vidas[0]<0)
+    {
+        fin();
+    }
+    else
+         {
+             caso6++;
+            goto buclesala1;
+         }
         break;
     }
-    finalsala1:
-        printf("Tras pasar ves unas escaleras y subes en busca de una salida.");
-}
-
+    }
+     finalsala1:
+          printf("Tras pasar ves unas escaleras y subes en busca de una salida.\n");
+   printf("Has tardado %ld segundos en pasarte la sala 1.\n",cronosec(1));
 }
 
 void sala5(int vidas[])
