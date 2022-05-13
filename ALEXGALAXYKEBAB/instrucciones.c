@@ -10,9 +10,9 @@ void printins()
     printf("Nivel Dificil: Tendras 3 puntos de vida,adivinanzas,retos y preguntas de cultura general complejas.Este modo de juego tiene 5 salas.(recomendada para valientes).\n");
     printf("\n");
     inicio1:
-    printf("Si desea conocer que son los puntos de vida pulse 1.\n");
+    printf("Si quieres saber mas sobre los puntos de vida pulse 1.\n");
     printf("\n");
-    printf("Si desea conocer mejor el tipo de preguntas/tipo de adivinanzas,etc... pulse 2.\n");
+    printf("Si quieres conocer mejor el tipo de preguntas, adivinanzas, juegos, etc... pulse 2.\n");
     printf("\n");
     printf("Si desea salir de las instrucciones pulse 3.\n");
     do
@@ -26,10 +26,9 @@ void printins()
         {
             printf("Los puntos de vida son las vidas que tienes y lo que te mantiene en el juego,en el momento en el que pierdas todos los puntos de vida el juego termina\n");
             printf("y por tanto habras fallado el intento del juego.\n");
-            printf("A medida que vaya trascurriendo el juego,ira ganando o perdiendo puntos de vida. Es decir, si contesta bien una pregunta no perderas ningun punto\n");
-            printf("de vida, pero si fallas se le restara un punto de vida.\n");
-            printf("Por supuesto tambien habra acertijos o preguntas que le sumara a sus puntos de vida, lo que se le llama recompensa por haber conseguido una racha \n");
-            printf("de preguntas acertadas, o por haber acertado una pregunta bonus,etc...\n");
+            printf("A medida que vaya trascurriendo el juego,ira ganando o perdiendo puntos de vida. Es decir, si contesta bien una pregunta o se pasa un juego correctamente\n");
+            printf("no perderas ningun punto de vida, pero si fallas se le restara un punto de vida.\n");
+            printf("Por supuesto tambien habra acertijos,juegos o preguntas que le sumara a sus puntos de vida.\n");
             printf("Esto lo que consigue es que el juego se le sume un nivel de dificultad y por tanto sea mas entretenido.\n");
             printf("\n");
             goto inicio1;
@@ -42,6 +41,7 @@ void printins()
             printf("la propia historia del scape room, como por ejemplo decisiones que variara el trascurso de la trama.\n");
             printf("Por tanto deberas estar muy atento a cada punto del juego para intentar acertar lo máximo posible y asi\n");
             printf("avanzar correctamente.\n");
+            printf("Tambien te encontraras juegos durante el juego.\n");
             printf("\n");
             goto inicio1;
             break;
