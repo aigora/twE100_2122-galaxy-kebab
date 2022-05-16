@@ -8,5 +8,4 @@ int cronosec(int iniciofin)
         pre_time=time(NULL);
     else
         return time(NULL)-pre_time; //si llamamos a la funcion con un nunero distinto a 0,para el tiempo
-    return 0;
 }
