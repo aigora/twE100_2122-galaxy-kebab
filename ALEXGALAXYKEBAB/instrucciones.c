@@ -26,7 +26,7 @@ void printins()
         {
             printf("Los puntos de vida son las vidas que tienes y lo que te mantiene en el juego,en el momento en el que pierdas todos los puntos de vida el juego termina\n");
             printf("y por tanto habras fallado el intento del juego.\n");
-            printf("A medida que vaya trascurriendo el juego,ira ganando o perdiendo puntos de vida. Es decir, si contesta bien una pregunta o se pasa un juego correctamente\n");
+            printf("A medida que vaya trascurriendo el juego,iras ganando o perdiendo puntos de vida. Es decir, si contestas bien una pregunta o se pasa un juego correctamente\n");
             printf("no perderas ningun punto de vida, pero si fallas se le restara un punto de vida.\n");
             printf("Por supuesto tambien habra acertijos,juegos o preguntas que le sumara a sus puntos de vida.\n");
             printf("Esto lo que consigue es que el juego se le sume un nivel de dificultad y por tanto sea mas entretenido.\n");
@@ -39,8 +39,7 @@ void printins()
         {
             printf("Habra todo tipo de preguntas desde cultura general ya sea de ciencia,historia,arte hasta preguntas internas de\n");
             printf("la propia historia del scape room, como por ejemplo decisiones que variara el trascurso de la trama.\n");
-            printf("Por tanto deberas estar muy atento a cada punto del juego para intentar acertar lo máximo posible y asi\n");
-            printf("avanzar correctamente.\n");
+            printf("Por tanto deberas estar muy atento a cada punto del juego para intentar acertar lo maximo posible y asi avanzar correctamente\n");
             printf("Tambien te encontraras juegos durante el juego.\n");
             printf("\n");
             goto inicio1;
