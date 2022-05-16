@@ -15,7 +15,7 @@ void juegofacil()
     printf("El cocinero te da el durum y te sientas a comer tranquilamente\n");
     printf("Despues de estar un rato comiendo, te empiezas a sentir algo mareado, todo se empieza a mover, te caes y pierdes el conocimiento\n");
     system("PAUSE");
-    sala1(vidas);
+    sala5(vidas);
 
 }
 int puntosdevidasumafac(int vidas[])
@@ -353,5 +353,320 @@ void sala1(int vidas[])
 
 void sala5(int vidas[])
 {
+    //printf(" \n");
+    fflush(stdin);
+    cronosec(0);
+   int d, j=0, h=0, a;
+   int caso1=0,caso2=0,caso3=0,caso4=0,caso5=0,caso6=0, hilo=0, dinamita=0, mechero=0;
+    printf("Tras abrirse la puerta bajas unos cuantos tramos de escaleras hasta llegar al comedor del restaurante.\n");
+    printf("Es un salon pequeño, con unas cuantas mesas y sillas. En un extremo de la sala esta la puerta que da a la calle, aunque esta cerrada\n");
+    printf("Ya no queda nada! En el comedor tambien hay algunas plantas de decoracion y un estante con menus y saleros. Todas las paredes son \n");
+    printf("blancas a excepcion de una donde estan pintados todos los menus con sus precios.  \n");
+    system("PAUSE");
+    buclesala5:
+    if((hilo!=0)&&(dinamita!=0)&&(mechero!=0))
+    {
+        goto finalsala5;
+        printf("Con todos los objetos que has conseguido haces un explosivo para detonar la puerta. Colocas la dinamita en la cerradura de la puerta y\n");
+        printf("despues la pones el hilo que sacaste de la planta. Prendes el hilo y rapidamente corres a protegerte n");
+    }
+    do
+    {
+        fflush(stdin);
+        printf("¿Que quieres mirar ahora? Planta 1 (1), Planta 2 (2), Mesas (3), Pared con los menus (4) o Estante (5) \n");
+        printf("Para indicar lo que quieres mirar escribe solo el numero del objeto \n");
+        scanf("%d",&d);
+    }
+        while((d<1)||(d>6));
+    switch(d)
+    {
+    case 1:
+        {
+            if(caso1!=0)
+            {
+                 printf("Ya has mirado aqui.\n");
+                goto buclesala5;
+            }
+            char palabra1[20];
+            char pregunta1[]="10000";
+            printf("Ves una caja con tomates. Dentro hay un papel con la siguiente pregunta:\n");
+            printf("Cuantos tipos de tomates existen? 5000, 10000 o 15000\n");
+            printf("(responde contestando el numero) \n");
+             h=0, j=0;
+            do
+    {
 
+    scanf("%s",palabra1);
+    a=strcmp(palabra1,pregunta1);
+    if(a!=0)
+    {
+    h++;
+    printf("MAL ,Te quedan %d intentos.\n",3-h);
+    if(h==3)
+    {
+        printf("Has perdido una vida!\n");
+        vidas[0]=puntosdevidarestafac(vidas);
+    }
+    j++;
+    }
+    if(a==0)
+    {
+        printf("CORRECTO.\n");
+        if(h==0)
+        {
+            printf("Has ganado una vida!\n");
+            vidas[0]=puntosdevidasumafac(vidas);
+        }
+         }
+    }while((a!=0)&&(j<3));
+    printf("Tienes %d vidas.\n",vidas[0]);
+    if(vidas[0]==0 || vidas[0]<0)
+    {
+        fin();
+    }
+    else
+    {
+        printf("Tras responder la pregunta en voz alta suenan unos altavoces:\n");
+        printf("Lo estas haciendo muy bien. La tuberia roja no te llama la atencion?\n");
+        system("PAUSE");
+        printf("Miras detras de la tuberia roja y encuentras una llave que podria abrir la puerta. \n");
+        caso1++;
+        goto buclesala5;
+    }
+           break;
+        }
+
+    case 2:
+        {
+             if(caso2!=0)
+            {
+                 printf("Ya has mirado aqui.\n");
+                goto buclesala5;
+            }
+            char palabra2[20];
+            char pregunta2[]="aliento";
+             printf("Ves una caja con unas lechugas. Una de ellas es muy rara, asi que la coges para inspeccionarla.\n");
+            printf("Al cogerla te das cuenta de que es de plastico y que lleva la siguiente adivinanza escrita: \n");
+            printf("Si lo ves es invierno, si lo pierdes pereces, cada día lo tomas mas de 1000 veces. Qué es?\n");
+            printf("(escribe solo la palabra en minusculas)\n");
+             h=0, j=0;
+            do
+    {
+
+    scanf("%s",palabra2);
+    a=strcmp(palabra2,pregunta2);
+    if(a!=0)
+    {
+    h++;
+    printf("MAL ,Te quedan %d intentos.\n",3-h);
+    if(h==3)
+    {
+        printf("Has perdido una vida!\n");
+        vidas[0]=puntosdevidarestafac(vidas);
+    }
+    j++;
+    }
+    if(a==0)
+    {
+        printf("CORRECTO.\n");
+        if(h==0)
+        {
+            printf("Has ganado una vida!\n");
+            vidas[0]=puntosdevidasumafac(vidas);
+        }
+         }
+    }while((a!=0)&&(j<3));
+    printf("Tienes %d vidas.\n",vidas[0]);
+    if(vidas[0]==0 || vidas[0]<0)
+    {
+        fin();
+    }
+    else
+    {
+        caso2++;
+            goto buclesala5;
+    }
+            break;
+        }
+    case 3:
+        {
+             if(caso3!=0)
+            {
+                 printf("Ya has mirado aqui.\n");
+                goto buclesala5;
+            }
+            char palabra3[20];
+            char pregunta3[]="1895";
+            printf("Ves una caja con unos cuantos panes. Tienes algo de hambre asi que aprovechas y te comes unos.");
+            printf("En el fondo de la caja encuentras la siguiente pregunta: \n");
+            printf("En que año se invento la hamburguesa? En 1895, en 1912 o en 1930?\n");
+            printf("(responde contestando el año) \n");
+             h=0, j=0;
+            do
+    {
+
+    scanf("%s",palabra3);
+    a=strcmp(palabra3,pregunta3);
+    if(a!=0)
+    {
+    h++;
+    printf("MAL ,Te quedan %d intentos.\n",3-h);
+    if(h==3)
+    {
+        printf("Has perdido una vida!\n");
+        vidas[0]=puntosdevidarestafac(vidas);
+    }
+    j++;
+    }
+    if(a==0)
+    {
+        printf("CORRECTO.\n");
+        if(h==0)
+        {
+            printf("Has ganado una vida!\n");
+            vidas[0]=puntosdevidasumafac(vidas);
+        }
+         }
+    }while((a!=0)&&(j<3));
+    printf("Tienes %d vidas.\n",vidas[0]);
+    if(vidas[0]==0 || vidas[0]<0)
+    {
+        fin();
+    }
+    else
+    {
+        caso3++;
+            goto buclesala5;
+    }
+            break;
+        }
+    case 4:
+        {
+            if(caso4==0)
+            {
+                printf("Ves una puerta. Es de madera y tiene muchos arañazos, como si alguien ya hubiera estado encerrado aqui. La puerta esta cerrada.\n");
+                caso4++;
+            }
+
+            else
+            {
+                printf("Pruebas la llave que has encontrado y haciendo un poco de fuerza consigues abrirla\n");
+                goto finalsala5;
+            }
+            goto buclesala5;
+            break;
+        }
+    case 5:
+        {
+             if(caso5!=0)
+            {
+                printf("Ya has mirado aqui.\n");
+                goto buclesala5;
+            }
+            char palabra5[20];
+            char pregunta5[]="1963";
+            printf("Abres la nevera. No hay mas que varios paquetes de filetes de carne y un brick de leche. te fijas en la pegatina del brick y cuentras esto:\n");
+            printf("En que año se invento el tetra brick? En 1941, en 1957 o en 1963?\n");
+            printf("(responde contestando el año) \n");
+            h=0, j=0;
+            do
+    {
+
+    scanf("%s",palabra5);
+    a=strcmp(palabra5,pregunta5);
+    if(a!=0)
+    {
+    h++;
+    printf("MAL ,Te quedan %d intentos.\n",3-h);
+    if(h==3)
+    {
+        printf("Has perdido una vida!\n");
+        vidas[0]=puntosdevidarestafac(vidas);
+    }
+    j++;
+    }
+    if(a==0)
+    {
+        printf("CORRECTO.\n");
+        if(h==0)
+        {
+            printf("Has ganado una vida!\n");
+            vidas[0]=puntosdevidasumafac(vidas);
+        }
+         }
+    }while((a!=0)&&(j<3));
+    printf("Tienes %d vidas.\n",vidas[0]);
+    if(vidas[0]==0 || vidas[0]<0)
+    {
+        fin();
+    }
+    else
+    {
+        caso5++;
+        goto buclesala5;
+    }
+            break;
+        }
+    case 6:
+        {
+             if(caso6!=0)
+            {
+                 printf("Ya has mirado aqui.\n");
+                goto buclesala5;
+            }
+             char palabra6[20];
+            char pregunta6[]="turquia";
+            printf("Vas al ordenador y lo enciendes. En la pantalla encuentras la siguiente pregunta: \n");
+            printf("De que pais es originario el kebab?\n");
+            printf("(escribe el pais con todas las letras minusculas y sin tildes)\n");
+            h=0, j=0;
+            do
+    {
+
+    scanf("%s",palabra6);
+    a=strcmp(palabra6,pregunta6);
+    if(a!=0)
+    {
+    h++;
+    printf("MAL ,Te quedan %d intentos.\n",3-h);
+    if(h==3)
+    {
+        printf("Has perdido una vida!\n");
+        vidas[0]=puntosdevidarestafac(vidas);
+    }
+    j++;
+    }
+    if(a==0)
+    {
+        printf("CORRECTO.\n");
+        if(h==0)
+        {
+            printf("Has ganado una vida!\n");
+            vidas[0]=puntosdevidasumafac(vidas);
+        }
+         }
+    }while((a!=0)&&(j<3));
+    printf("Tienes %d vidas.\n",vidas[0]);
+    if(vidas[0]==0 || vidas[0]<0)
+    {
+        fin();
+    }
+    else
+         {
+             caso6++;
+            goto buclesala5;
+         }
+        break;
+    }
+    }
+    if(vidas[0]>0)
+    {
+     finalsala5:
+        printf("Con todos los objetos que has conseguido haces un explosivo para abrir la puerta. Colocas la dinamita en la y la pones el\n");
+        printf("hilo que sacaste de la planta. Prendes el hilo con el mechero y rapidamente corres a protegerte detras de unas mesas. \n");
+        printf("Esperas unos segundos y... BUM!\n");
+        system("PAUSE");
+        printf("La puerta se abre de golpe y sales corriendo del galaxy kebab\n");
+   printf("Has tardado %ld segundos en pasarte la sala 5.\n",cronosec(1));
+    }
 }
