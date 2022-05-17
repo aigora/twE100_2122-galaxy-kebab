@@ -360,15 +360,13 @@ void sala5(int vidas[])
    int caso1=0,caso2=0,caso3=0,caso4=0,caso5=0,caso6=0, hilo=0, dinamita=0, mechero=0;
     printf("Tras abrirse la puerta bajas unos cuantos tramos de escaleras hasta llegar al comedor del restaurante.\n");
     printf("Es un salon pequeño, con unas cuantas mesas y sillas. En un extremo de la sala esta la puerta que da a la calle, aunque esta cerrada\n");
-    printf("Ya no queda nada! En el comedor tambien hay algunas plantas de decoracion y un estante con menus y saleros. Todas las paredes son \n");
+    printf("Ya no queda nada! En el comedor tambien hay algunas plantas de decoracion y un estante con menus, cubiertos y saleros. Todas las paredes son \n");
     printf("blancas a excepcion de una donde estan pintados todos los menus con sus precios.  \n");
     system("PAUSE");
     buclesala5:
     if((hilo!=0)&&(dinamita!=0)&&(mechero!=0))
     {
         goto finalsala5;
-        printf("Con todos los objetos que has conseguido haces un explosivo para detonar la puerta. Colocas la dinamita en la cerradura de la puerta y\n");
-        printf("despues la pones el hilo que sacaste de la planta. Prendes el hilo y rapidamente corres a protegerte n");
     }
     do
     {
@@ -388,9 +386,9 @@ void sala5(int vidas[])
                 goto buclesala5;
             }
             char palabra1[20];
-            char pregunta1[]="10000";
-            printf("Ves una caja con tomates. Dentro hay un papel con la siguiente pregunta:\n");
-            printf("Cuantos tipos de tomates existen? 5000, 10000 o 15000\n");
+            char pregunta1[]="300";
+            printf("Ves una planta de aloe vera. Encuentras un papel con la siguiente pregunta:\n");
+            printf("Alrededor de cuantos tipos de Aloe vera existen? 150, 300 o 500\n");
             printf("(responde contestando el numero) \n");
              h=0, j=0;
             do
@@ -426,10 +424,8 @@ void sala5(int vidas[])
     }
     else
     {
-        printf("Tras responder la pregunta en voz alta suenan unos altavoces:\n");
-        printf("Lo estas haciendo muy bien. La tuberia roja no te llama la atencion?\n");
-        system("PAUSE");
-        printf("Miras detras de la tuberia roja y encuentras una llave que podria abrir la puerta. \n");
+        printf("Sigues rebuscando por la maceta y encuentras un mechero. Lo guardas por si te hace falta en el futuro.\n");
+        mechero++;
         caso1++;
         goto buclesala5;
     }
@@ -444,11 +440,10 @@ void sala5(int vidas[])
                 goto buclesala5;
             }
             char palabra2[20];
-            char pregunta2[]="aliento";
-             printf("Ves una caja con unas lechugas. Una de ellas es muy rara, asi que la coges para inspeccionarla.\n");
-            printf("Al cogerla te das cuenta de que es de plastico y que lleva la siguiente adivinanza escrita: \n");
-            printf("Si lo ves es invierno, si lo pierdes pereces, cada día lo tomas mas de 1000 veces. Qué es?\n");
-            printf("(escribe solo la palabra en minusculas)\n");
+            char pregunta2[]="china";
+             printf("Ves una maceta con unos cuantos bambus. En un lado encuentras la pregunta:\n");
+             printf("De que pais es originario el bambu? \n");
+             printf("(escribe solo la palabra en minusculas)\n");
              h=0, j=0;
             do
     {
@@ -483,6 +478,9 @@ void sala5(int vidas[])
     }
     else
     {
+        printf("Despues de examinar la planta te acuerdas de que en un episodeo que viste de el ultimo superviviente se puede sacar hilo del bambu.\n");
+        printf("Por ello, coges un cuchillo del estante de los cubiertos y consigues un poco hilo. \n");
+        hilo++;
         caso2++;
             goto buclesala5;
     }
@@ -496,11 +494,11 @@ void sala5(int vidas[])
                 goto buclesala5;
             }
             char palabra3[20];
-            char pregunta3[]="1895";
-            printf("Ves una caja con unos cuantos panes. Tienes algo de hambre asi que aprovechas y te comes unos.");
-            printf("En el fondo de la caja encuentras la siguiente pregunta: \n");
-            printf("En que año se invento la hamburguesa? En 1895, en 1912 o en 1930?\n");
-            printf("(responde contestando el año) \n");
+            char pregunta3[]="xiii";
+            printf("Te fijas en las mesas y sillas a ver si encuentras alguna pista. En general todo el mobiliario esta algo desgastado. \n");
+            printf("Ves que en una mesa hay algo grabado:\n");
+            printf("De que siglo datan los primeros grabados?\n");
+            printf("(responde contestando el siglo en misnuculas y numeros romanos) \n");
              h=0, j=0;
             do
     {
@@ -540,34 +538,70 @@ void sala5(int vidas[])
     }
             break;
         }
+
     case 4:
         {
-            if(caso4==0)
+             if(caso4!=0)
             {
-                printf("Ves una puerta. Es de madera y tiene muchos arañazos, como si alguien ya hubiera estado encerrado aqui. La puerta esta cerrada.\n");
-                caso4++;
+                printf("Ya has mirado aqui.\n");
+                goto buclesala5;
             }
+            char palabra4[20];
+            char pregunta4[]="umami";
+            printf("Fijandote en la pared te sorprende la cantidad de platos que se cocinan en este restaurante. En los ingredientes encuentras escrito:\n");
+            printf("Cual de los cinco sabores basicos significa 'esencia de la delicia' en japones?\n");
+            printf("(responde contestando la palabra en minusculas) \n");
+            h=0, j=0;
+            do
+    {
 
-            else
-            {
-                printf("Pruebas la llave que has encontrado y haciendo un poco de fuerza consigues abrirla\n");
-                goto finalsala5;
-            }
-            goto buclesala5;
+    scanf("%s",palabra4);
+    a=strcmp(palabra4,pregunta4);
+    if(a!=0)
+    {
+    h++;
+    printf("MAL ,Te quedan %d intentos.\n",3-h);
+    if(h==3)
+    {
+        printf("Has perdido una vida!\n");
+        vidas[0]=puntosdevidarestafac(vidas);
+    }
+    j++;
+    }
+    if(a==0)
+    {
+        printf("CORRECTO.\n");
+        if(h==0)
+        {
+            printf("Has ganado una vida!\n");
+            vidas[0]=puntosdevidasumafac(vidas);
+        }
+         }
+    }while((a!=0)&&(j<3));
+    printf("Tienes %d vidas.\n",vidas[0]);
+    if(vidas[0]==0 || vidas[0]<0)
+    {
+        fin();
+    }
+    else
+    {
+        caso4++;
+        goto buclesala5;
+    }
             break;
         }
     case 5:
         {
              if(caso5!=0)
             {
-                printf("Ya has mirado aqui.\n");
+                 printf("Ya has mirado aqui.\n");
                 goto buclesala5;
             }
-            char palabra5[20];
-            char pregunta5[]="1963";
-            printf("Abres la nevera. No hay mas que varios paquetes de filetes de carne y un brick de leche. te fijas en la pegatina del brick y cuentras esto:\n");
-            printf("En que año se invento el tetra brick? En 1941, en 1957 o en 1963?\n");
-            printf("(responde contestando el año) \n");
+             char palabra5[20];
+            char pregunta5[]="egipcia";
+            printf("Ves un estante con unos cuantos menus, cubiertos y saleros. Mirando los menus encuentras la siguiente pregunta:\n");
+            printf("Que civilizacion empezo a usar tenedores?\n");
+            printf("(escribe solo el nombre de la civilizacion en misnuculas)\n");
             h=0, j=0;
             do
     {
@@ -601,59 +635,11 @@ void sala5(int vidas[])
         fin();
     }
     else
-    {
-        caso5++;
-        goto buclesala5;
-    }
-            break;
-        }
-    case 6:
-        {
-             if(caso6!=0)
-            {
-                 printf("Ya has mirado aqui.\n");
-                goto buclesala5;
-            }
-             char palabra6[20];
-            char pregunta6[]="turquia";
-            printf("Vas al ordenador y lo enciendes. En la pantalla encuentras la siguiente pregunta: \n");
-            printf("De que pais es originario el kebab?\n");
-            printf("(escribe el pais con todas las letras minusculas y sin tildes)\n");
-            h=0, j=0;
-            do
-    {
-
-    scanf("%s",palabra6);
-    a=strcmp(palabra6,pregunta6);
-    if(a!=0)
-    {
-    h++;
-    printf("MAL ,Te quedan %d intentos.\n",3-h);
-    if(h==3)
-    {
-        printf("Has perdido una vida!\n");
-        vidas[0]=puntosdevidarestafac(vidas);
-    }
-    j++;
-    }
-    if(a==0)
-    {
-        printf("CORRECTO.\n");
-        if(h==0)
-        {
-            printf("Has ganado una vida!\n");
-            vidas[0]=puntosdevidasumafac(vidas);
-        }
-         }
-    }while((a!=0)&&(j<3));
-    printf("Tienes %d vidas.\n",vidas[0]);
-    if(vidas[0]==0 || vidas[0]<0)
-    {
-        fin();
-    }
-    else
          {
-             caso6++;
+             printf("Despues miras en los cajones del mueble y te das cuenta de que hay un falso fondo. Al abrirlo encuentras una dinamita. \n");
+             printf("Empizas a pensar en una manera de usarla para salir... \n");
+             dinamita++;
+             caso5++;
             goto buclesala5;
          }
         break;
@@ -662,11 +648,13 @@ void sala5(int vidas[])
     if(vidas[0]>0)
     {
      finalsala5:
-        printf("Con todos los objetos que has conseguido haces un explosivo para abrir la puerta. Colocas la dinamita en la y la pones el\n");
+         system("PAUSE");
+        printf("Con todos los objetos que has conseguido haces un explosivo para abrir la puerta. Colocas la dinamita en la cerradura y la pones el\n");
         printf("hilo que sacaste de la planta. Prendes el hilo con el mechero y rapidamente corres a protegerte detras de unas mesas. \n");
         printf("Esperas unos segundos y... BUM!\n");
         system("PAUSE");
-        printf("La puerta se abre de golpe y sales corriendo del galaxy kebab\n");
+        printf("La puerta se abre de golpe y escapas corriendo. \n");
+        printf("Enhorabuena! Has conseguido salir del Galaxy Kebab.");
    printf("Has tardado %ld segundos en pasarte la sala 5.\n",cronosec(1));
     }
 }
