@@ -10,12 +10,12 @@
 void juegodificil()
 {
     int vidas[1]={3};
-    printf("Es sabado por la ma%cana. Has estado estudiando y como hace un buen dia decides irte a comer al Galaxy Kebab\n",164);
+    printf("Es sabado por la ma%cana. Has estado estudiando y como hace un buen dia decides irte a comer al Galaxy Kebab.\n",164);
     printf("Cuando llegas el cocinero te saluda amablemente:\n");
     printf("<cocinero> ¿Que tal amigo?¿Te pongo lo de siempre, un durum mixto?\n");
-    printf("<tu> Hola! Si lo de siempre, gracias\n");
-    printf("El cocinero te da el durum y te sientas a comer tranquilamente\n");
-    printf("Despues de estar un rato comiendo, te empiezas a sentir algo mareado, todo se empieza a mover, te caes y pierdes el conocimiento\n");
+    printf("<tu> Hola! Si lo de siempre, gracias.\n");
+    printf("El cocinero te da el durum y te sientas a comer tranquilamente.\n");
+    printf("Despues de estar un rato comiendo, te empiezas a sentir algo mareado, todo se empieza a mover, te caes y pierdes el conocimiento.\n");
     if(vidas[0]>0)
     {
     sala1(vidas);
@@ -280,6 +280,7 @@ printf("Avanzas por el conducto y de pronto oyes un sonido extraño y cede caes a
  printf("Que no dudas en usar en la puerta cerrada bajando las escaleras.\n");
  printf("Introduces la llave y una panel se enciende a tu derecha\n");
  printf("Es un tres en raya, a la izquierda del panel pone: juguemos\n");
+ system("PAUSE");
       juegotresenraya(vidas);
        printf("Tienes %d vidas.\n",vidas[0]);
        if(vidas[0]==0 || vidas[0]<0)
