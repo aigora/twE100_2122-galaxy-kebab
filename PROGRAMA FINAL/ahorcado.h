@@ -1,0 +1,1 @@
+void juegoahorcado(int vidas[]);
