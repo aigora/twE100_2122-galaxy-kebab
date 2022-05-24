@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 #include "facil.h"
 #include "dificil.h"
 #include "tresenraya.h"
@@ -17,6 +18,7 @@ void llamada(char tab[3][3],int vidas[])
   valores(tab);
   do
   {
+      system("cls");
       tablero(tab);
       if(i%2==0)//si es par le toca al usuario
       {
