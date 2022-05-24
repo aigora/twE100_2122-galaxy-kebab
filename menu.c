@@ -151,7 +151,6 @@ scanf("%d",&op);
  }
  case 2:
     {
-        //aqui va ir los creditos.....
         printf("Hasta pronto!\n");
         break;
     }
