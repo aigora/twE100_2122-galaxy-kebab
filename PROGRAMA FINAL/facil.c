@@ -7,7 +7,7 @@
 void juegofacil()
 {
     int vidas[1]={5};
-     printf("Es sabado por la mañana. Has estado estudiando y como hace un buen dia decides irte a comer al Galaxy Kebab.\n");
+     printf("Es sabado por la ma%cana. Has estado estudiando y como hace un buen dia decides irte a comer al Galaxy Kebab.\n",164);
     printf("Cuando llegas el cocinero te saluda amablemente:\n");
     printf("<cocinero> ¿Que tal amigo?¿Te pongo lo de siempre, un durum mixto?\n");
     printf("<tu> Hola! Si lo de siempre, gracias.\n");
@@ -50,7 +50,7 @@ void sala1(int vidas[])
    int caso1=0,caso2=0,caso3=0,caso4=0,caso5=0,caso6=0, llave=0;
     printf("Te despiertas en lo que parece un sotano. No es una sala muy grande, pero hace frio. Ves una gran estanteria con cajas, una nevera y \n");
     printf("unas tuberias con goteras. Tambien hay una especie de despacho con una silla, una mesa con un ordenador y un corcho con recortes y fotos.\n");
-    printf("En un lado hay una puerta con lo que parecen arañazos de una persona. Fijandote en la mesa encuentras varias grabadoras.\n");
+    printf("En un lado hay una puerta con lo que parecen ara%cazos de una persona. Fijandote en la mesa encuentras varias grabadoras.\n",164);
     printf("Todas estan vacias menos una. En ella reproduces un mensaje en un idioma desconocido pero en una parte entiendes con complicaciones \n");
     printf("algo de un secuestro y de que la persona tendra que ir resolviendo pruebas para salir. Fijandote en todos los recobecos de la sala te das\n");
     printf("cuenta de que en las esquinas superiores hay unos altavoces. \n");
@@ -63,7 +63,7 @@ void sala1(int vidas[])
         printf("Para indicar lo que quieres mirar escribe solo el numero del objeto \n");
         scanf("%d",&d);
     }
-        while((d<1)||(d>6));
+        while((d!=1)&&(d!=2)&&(d!=3)&&(d!=4)&&(d!=5)&&(d!=6));
     switch(d)
     {
     case 1:
@@ -87,8 +87,8 @@ void sala1(int vidas[])
     if(a!=0)
     {
     h++;
-    printf("MAL ,Te quedan %d intentos.\n",3-h);
-    if(h==3)
+    printf("MAL ,Te quedan %d intentos.\n",2-h);
+    if(h==2)
     {
         printf("Has perdido una vida!\n");
         vidas[0]=puntosdevidarestafac(vidas);
@@ -104,7 +104,7 @@ void sala1(int vidas[])
             vidas[0]=puntosdevidasumafac(vidas);
         }
          }
-    }while((a!=0)&&(j<3));
+    }while((a!=0)&&(j<2));
     printf("Tienes %d vidas.\n",vidas[0]);
     if(vidas[0]==0 || vidas[0]<0)
     {
@@ -187,7 +187,7 @@ void sala1(int vidas[])
             printf("Ves una caja con unos cuantos panes. Tienes algo de hambre asi que aprovechas y te comes unos.");
             printf("En el fondo de la caja encuentras la siguiente pregunta: \n");
             printf("En que año se invento la hamburguesa? En 1895, en 1912 o en 1930?\n");
-            printf("(responde contestando el a%o) \n",164);
+            printf("(responde contestando el a%co) \n",164);
              h=0, j=0;
             do
     {
@@ -197,8 +197,8 @@ void sala1(int vidas[])
     if(a!=0)
     {
     h++;
-    printf("MAL ,Te quedan %d intentos.\n",3-h);
-    if(h==3)
+    printf("MAL ,Te quedan %d intentos.\n",2-h);
+    if(h==2)
     {
         printf("Has perdido una vida!\n");
         vidas[0]=puntosdevidarestafac(vidas);
@@ -214,7 +214,7 @@ void sala1(int vidas[])
             vidas[0]=puntosdevidasumafac(vidas);
         }
          }
-    }while((a!=0)&&(j<3));
+    }while((a!=0)&&(j<2));
     printf("Tienes %d vidas.\n",vidas[0]);
     if(vidas[0]==0 || vidas[0]<0)
     {
@@ -231,7 +231,7 @@ void sala1(int vidas[])
         {
             if(caso4==0)
             {
-                printf("Ves una puerta. Es de madera y tiene muchos arañazos, como si alguien ya hubiera estado encerrado aqui. La puerta esta cerrada.\n");
+                printf("Ves una puerta. Es de madera y tiene muchos ara%cazos, como si alguien ya hubiera estado encerrado aqui. La puerta esta cerrada.\n",164);
                 caso4++;
             }
 
@@ -256,9 +256,9 @@ void sala1(int vidas[])
             }
             char palabra5[20];
             char pregunta5[]="1963";
-            printf("Abres la nevera. No hay mas que varios paquetes de filetes de carne y un brick de leche. te fijas en la pegatina del brick y cuentras esto:\n");
+            printf("Abres la nevera. No hay mas que varios paquetes de filetes de carne y un brick de leche. Te fijas en la pegatina del brick y encuentras esto:\n");
             printf("En que año se invento el tetra brick? En 1941, en 1957 o en 1963?\n");
-            printf("(responde contestando el a%do) \n",164);
+            printf("(responde contestando el a%co) \n",164);
             h=0, j=0;
             do
     {
@@ -268,8 +268,8 @@ void sala1(int vidas[])
     if(a!=0)
     {
     h++;
-    printf("MAL ,Te quedan %d intentos.\n",3-h);
-    if(h==3)
+    printf("MAL ,Te quedan %d intentos.\n",2-h);
+    if(h==2)
     {
         printf("Has perdido una vida!\n");
         vidas[0]=puntosdevidarestafac(vidas);
@@ -285,7 +285,7 @@ void sala1(int vidas[])
             vidas[0]=puntosdevidasumafac(vidas);
         }
          }
-    }while((a!=0)&&(j<3));
+    }while((a!=0)&&(j<2));
     printf("Tienes %d vidas.\n",vidas[0]);
     if(vidas[0]==0 || vidas[0]<0)
     {
@@ -594,7 +594,7 @@ void sala5(int vidas[])
         printf("Para indicar lo que quieres mirar escribe solo el numero del objeto \n");
         scanf("%d",&d);
     }
-        while((d<1)||(d>6));
+        while((d!=1)&&(d!=2)&&(d!=3)&&(d!=4)&&(d!=5)&&(d!=6));
     switch(d)
     {
     case 1:
@@ -618,8 +618,8 @@ void sala5(int vidas[])
     if(a!=0)
     {
     h++;
-    printf("MAL ,Te quedan %d intentos.\n",3-h);
-    if(h==3)
+    printf("MAL ,Te quedan %d intentos.\n",2-h);
+    if(h==2)
     {
         printf("Has perdido una vida!\n");
         vidas[0]=puntosdevidarestafac(vidas);
@@ -635,7 +635,7 @@ void sala5(int vidas[])
             vidas[0]=puntosdevidasumafac(vidas);
         }
          }
-    }while((a!=0)&&(j<3));
+    }while((a!=0)&&(j<2));
     printf("Tienes %d vidas.\n",vidas[0]);
     if(vidas[0]==0 || vidas[0]<0)
     {
