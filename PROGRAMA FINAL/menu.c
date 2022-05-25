@@ -11,7 +11,7 @@ int op;
 char printnick[100];
 int numsuarios=0;
 usuario datos[100];
- printf("BIENVENIDO A GALAXY KEBAB.\n");
+ printf("BIENVENIDO AL GALAXY KEBAB.\n");
  printf("\n");
  printf("Estas en el menu,elija una opcion por favor:\n");
  printf("\n");
@@ -66,7 +66,7 @@ usuario datos[100];
      }
 
  printf("\n");
- printf("Despues de haber iniciado sesion o haberse registrado en galaxy kebab. Toca pasar al siguiente paso.\n");
+ printf("Despues de haber iniciado sesion o haberse registrado en el galaxy kebab, toca pasar al siguiente paso.\n");
  inicio1:
  printf("Pulse 1 si desea leer las intrucciones del juego.\n");
  printf("Pulse 2 si desea empezar a jugar.\n");

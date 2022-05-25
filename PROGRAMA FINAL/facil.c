@@ -59,7 +59,7 @@ void sala1(int vidas[])
     do
     {
         fflush(stdin);
-        printf("¿Que quieres mirar ahora? Caja 1 (1), Caja 2 (2), Caja 3 (3), Puerta (4), Nevera (5) o Ordenador (6) \n");
+        printf("Que quieres mirar ahora? Caja 1 (1), Caja 2 (2), Caja 3 (3), Puerta (4), Nevera (5) o Ordenador (6) \n");
         printf("Para indicar lo que quieres mirar escribe solo el numero del objeto \n");
         scanf("%d",&d);
     }
@@ -362,7 +362,7 @@ void sala2(int vidas[])
 {
     printf("\n");
     cronosec(0);
-    printf("Terminas de subir las escaleras y llegas a una cocina,\n");
+    printf("Terminas de subir las escaleras y llegas a una cocina. \n");
     printf("Hay poca luz pero la justa como para poder ver bien, huele mal y de repente te das cuenta de algo.\n");
     printf("Hay una grabadora sobre la encimera, no la enciendes temiendo que pueda pasar.\n");
     printf("Miras a tu alrededor y ves un telefono fijo que no dudas en coger, no da linea.\n");
@@ -370,10 +370,11 @@ void sala2(int vidas[])
     printf("'Hola amigo, si estas escuchando esto es por que has salido del sotano y ahora estas aqui.\n");
     printf("La realidad es que quiero darte una oportunidad para escapar.\n");
     printf("Si miras a tu derecha veras una mesa con un plato encima, si levantas el plato encontraras un papel con cinco preguntas\n");
-    printf("Estas preguntas tienen una sola respuesta y las primeras letras de cada pregunta formaran una palabra\n");
+    printf("Estas preguntas tienen una sola respuesta y las primeras letras de cada respuesta formaran una palabra. \n");
     printf("Esta palabra es el lugar en el que encontraras un objeto que te ayudara a estar mas cerca de ser libre, buena suerte'\n");
     printf("Estas desconcertado, te acercas a la mesa y ves  el papel, en este pone: \n");
-    printf("'Como soy una gran aficionado del cine y de la ingenieria que soy, las preguntas tendran que ver con ello.\n");
+    printf("'Como soy una gran aficionado del cine y de la ingenieria que soy, las preguntas tendran que ver con ello'\n");
+    printf("(responde todas las preguntas en minusculas sin tildes");
     printf("1. Maquina que pone en rotacion una muestra para la sedimentacion o decantacion de sus componentes.\n");
 
     char palabra[20];
@@ -410,7 +411,7 @@ void sala2(int vidas[])
     else
         {
 
-    printf("2. Pelicula de ciencia ficcion de 1979 conocida tambien como 'el octavo pasajero.\n");
+    printf("2. Pelicula de ciencia ficcion de 1979 conocida tambien como 'El octavo pasajero'.\n");
 
     char pregunta2 []="alien";
     h=0,j=0;
@@ -551,10 +552,10 @@ void sala2(int vidas[])
         {
 
 
-    printf("La palabra es cajon.\n");
+    printf("La palabra que formas con las primeras letras de esas palabras es cajon.\n");
     printf("Comienzas a buscar rapidamente en todos los cajones de la cocina y encuentras un destornillador\n");
     printf("Guardas el destornillador, y continuas buscando.\n");
-    printf("Finalmente encuentras tambien una bombilla de luz ultravioleta que no dudas en conectar a el techo.\n");
+    printf("Finalmente encuentras tambien una bombilla de luz ultravioleta que no dudas en conectar al techo.\n");
     printf("Accionas el interruptor. En una de las baldosas de la cocina resalta una X. Rompes la baldosa y encuentras una llave.\n");
     system("PAUSE");
     printf("Sin dudarlo intentas abrir la puerta que podria ser tu salida con la llave y lo consigues.\n");
@@ -589,7 +590,7 @@ void sala5(int vidas[])
     do
     {
         fflush(stdin);
-        printf("¿Que quieres mirar ahora? Planta 1 (1), Planta 2 (2), Mesas (3), Pared con los menus (4) o Estante (5) \n");
+        printf("Que quieres mirar ahora? Planta 1 (1), Planta 2 (2), Mesas (3), Pared con los menus (4) o Estante (5) \n");
         printf("Para indicar lo que quieres mirar escribe solo el numero del objeto \n");
         scanf("%d",&d);
     }
@@ -874,6 +875,7 @@ void sala5(int vidas[])
         printf("La puerta se abre de golpe y escapas corriendo. \n");
         printf("Enhorabuena! Has conseguido salir del Galaxy Kebab.\n");
    printf("Has tardado %ld segundos en pasarte la sala 5.\n",cronosec(1));
+   system("PAUSE");
         system("cls");
         FILE *fich;
         char credits[1000];
