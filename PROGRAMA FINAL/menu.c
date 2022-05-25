@@ -111,7 +111,7 @@ scanf("%d",&op);
            system("cls");
         printf("Ha escogido el nivel facil.\n");
         printf("Por tanto, durante el juego se encontrara con preguntas asequibles.\n");
-        printf("Comienza la gran experiencia de el scape room GALAXY KEBAB.\n");
+        printf("Comienza la gran experiencia del scape room GALAXY KEBAB.\n");
         juegofacil();
            break;
        }
