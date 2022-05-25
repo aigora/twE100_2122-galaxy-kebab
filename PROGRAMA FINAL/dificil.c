@@ -83,7 +83,7 @@ void sala3(int vidas[])
     else
         {
     printf("Se encienden las luces de repente y quedas cegado unos segundos.\n");
- printf("ves una habitacion pequeña y muy sencilla. Una cama, un armario y un par de posters de decoracion.\n");
+ printf("ves una habitacion peque%ca y muy sencilla. Una cama, un armario y un par de posters de decoracion.\n",164);
 printf("De repente empieza a sonar la alarma de un despertador con un sonido muy desagradable, pero se escucha lo siguiente:\n",164);
  printf("Buenos dias, para apagar la alarma deberas responder bien la siguiente pregunta, Que gran ingeniero trato de construir la conocida Torre Tesla?\n");
  printf("a)Nikola Tesla.\n");
@@ -236,7 +236,7 @@ printf("Se apaga la alarma y decides seguir investigando la habitacion.\n");
     else
         {
  printf("<Enhorabuena, sigues con vida, y recuerda que aqui hay gato encerrado>\n");
- printf("Abres la caja fuerte y quedas extrañado. Solo habia un misero papel. Lo abres y ves un plano.\n",164);
+ printf("Abres la caja fuerte y quedas extra%cado. Solo habia un misero papel. Lo abres y ves un plano.\n",164);
  printf("Es un plano de la habitacion. En el observas que hay una especie de tunel tras el armario.\n");
  printf("Mueves el armario y ves la entrada de un conducto de ventilacion.\n");
  printf("Este tiene tornillos, pero recuerdas que en la cocina cogiste un destornillador.\n");
