@@ -2,11 +2,6 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="facil.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="18385" topLine="540" />
-		</Cursor>
-	</File>
 	<File name="login.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="60" />
@@ -17,14 +12,24 @@
 			<Cursor1 position="0" topLine="25" />
 		</Cursor>
 	</File>
-	<File name="dificil.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="tresenraya.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7021" topLine="0" />
+			<Cursor1 position="0" topLine="27" />
 		</Cursor>
 	</File>
 	<File name="menu.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2664" topLine="45" />
+		</Cursor>
+	</File>
+	<File name="dificil.c" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7021" topLine="272" />
+		</Cursor>
+	</File>
+	<File name="facil.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11991" topLine="216" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

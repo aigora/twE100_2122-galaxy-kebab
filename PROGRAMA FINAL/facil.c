@@ -374,7 +374,7 @@ void sala2(int vidas[])
     printf("Esta palabra es el lugar en el que encontraras un objeto que te ayudara a estar mas cerca de ser libre, buena suerte'\n");
     printf("Estas desconcertado, te acercas a la mesa y ves  el papel, en este pone: \n");
     printf("'Como soy una gran aficionado del cine y de la ingenieria que soy, las preguntas tendran que ver con ello'\n");
-    printf("(responde todas las preguntas en minusculas sin tildes");
+    printf("(responde todas las preguntas en minusculas sin tildes.\n");
     printf("1. Maquina que pone en rotacion una muestra para la sedimentacion o decantacion de sus componentes.\n");
 
     char palabra[20];
