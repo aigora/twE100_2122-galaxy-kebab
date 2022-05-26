@@ -1,0 +1,72 @@
+# depslib dependency file v1.0
+1653298806 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\ahorcado.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<stdlib.h>
+	"ahorcado.h"
+	"facil.h"
+
+1652717590 c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\ahorcado.h
+
+1651831463 c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\facil.h
+
+1652423992 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\crono.c
+	<stdio.h>
+	<time.h>
+	"crono.h"
+
+1652423992 c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\crono.h
+
+1653505908 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\dificil.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<stdlib.h>
+	"crono.h"
+	"dificil.h"
+	"facil.h"
+	"ahorcado.h"
+	"tresenraya.h"
+
+1651834638 c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\dificil.h
+
+1653330515 c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\tresenraya.h
+
+1653503547 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\instrucciones.c
+	<stdio.h>
+	<string.h>
+
+1653291587 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\login.c
+	<stdio.h>
+	<string.h>
+
+1653504530 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"instrucciones.h"
+	"login.h"
+	"facil.h"
+	"dificil.h"
+
+1650534258 c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\instrucciones.h
+
+1653289942 c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\login.h
+
+1653391504 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\tresenraya.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	"facil.h"
+	"dificil.h"
+	"tresenraya.h"
+
+1653505318 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\facil.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<stdlib.h>
+	"facil.h"
+	"crono.h"
+
