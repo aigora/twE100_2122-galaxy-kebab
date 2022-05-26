@@ -51,7 +51,7 @@ void sala3(int vidas[])
     printf("Y de repente,... ¡EUREKA!\n");
     printf("Has encontrado lo que parece un cuadro de luces, pero...\n");
     printf("Para poder encender los plomos deberas contestar una pregunta.\n");
-    printf("Quien fue el inverntor de la bombilla incandescente? y recuerda que los nombres propios empiezan en mayuscula.\n");
+    printf("Quien fue el inventor de la bombilla incandescente? y recuerda que los nombres propios empiezan en mayuscula.\n");
    do
     {
     scanf("%s",palabra);

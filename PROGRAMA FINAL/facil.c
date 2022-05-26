@@ -134,7 +134,7 @@ void sala1(int vidas[])
             char pregunta2[]="aliento";
              printf("Ves una caja con unas lechugas. Una de ellas es muy rara, asi que la coges para inspeccionarla.\n");
             printf("Al cogerla te das cuenta de que es de plastico y que lleva la siguiente adivinanza escrita: \n");
-            printf("Si lo ves es invierno, si lo pierdes pereces, cada día lo tomas mas de 1000 veces. Qué es?\n");
+            printf("Si lo ves es invierno, si lo pierdes pereces, cada dia lo tomas mas de 1000 veces. Que es?\n");
             printf("(escribe solo la palabra en minusculas)\n");
              h=0, j=0;
             do

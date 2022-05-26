@@ -18,7 +18,7 @@
 
 1652423992 c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\crono.h
 
-1653505908 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\dificil.c
+1653559583 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\dificil.c
 	<stdio.h>
 	<string.h>
 	<time.h>
@@ -41,7 +41,7 @@
 	<stdio.h>
 	<string.h>
 
-1653504530 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\menu.c
+1653550088 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\menu.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -62,7 +62,7 @@
 	"dificil.h"
 	"tresenraya.h"
 
-1653549851 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\facil.c
+1653559218 source:c:\users\alexi\dropbox\pc\documents\github\twe100_2122-galaxy-kebab\programa final\facil.c
 	<stdio.h>
 	<string.h>
 	<time.h>
