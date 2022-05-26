@@ -120,7 +120,7 @@ scanf("%d",&op);
         system("cls");
         printf("Ha escogido el nivel dificil.\n");
         printf("Por tanto,durante el juego se encontrara con preguntas mas complejas.\n");
-        printf("Comienza la gran experiencia de el scape room GALAXY KEBAB.\n");
+        printf("Comienza la gran experiencia del scape room GALAXY KEBAB.\n");
         juegodificil();
         break;
     }
