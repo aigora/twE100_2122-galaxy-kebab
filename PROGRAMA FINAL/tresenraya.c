@@ -4,7 +4,6 @@
 #include "facil.h"
 #include "dificil.h"
 #include "tresenraya.h"
-
 void juegotresenraya(int vidas[])
 {
     char tab [3][3];//tablero
@@ -45,9 +44,9 @@ void llamada(char tab[3][3],int vidas[])
       printf("Has perdido.\n");
       puntosdevidarestafac(vidas);
   }
-  else
+  else if(j==2)
   {
-      printf("Has emapatado.\n");
+      printf("Has empatado.\n");
   }
 }
 void valores(char tab[3][3])
