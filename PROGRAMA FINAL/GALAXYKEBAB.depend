@@ -70,3 +70,58 @@
 	"facil.h"
 	"crono.h"
 
+1653426777 source:c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\ahorcado.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<stdlib.h>
+	"ahorcado.h"
+	"facil.h"
+
+1653426777 c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\ahorcado.h
+
+1653426777 c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\facil.h
+
+1653426777 source:c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\crono.c
+	<stdio.h>
+	<time.h>
+	"crono.h"
+
+1653426777 c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\crono.h
+
+1653582210 source:c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\dificil.c
+	<stdio.h>
+	<string.h>
+	<time.h>
+	<stdlib.h>
+	"crono.h"
+	"dificil.h"
+	"facil.h"
+	"ahorcado.h"
+	"tresenraya.h"
+
+1653426777 c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\dificil.h
+
+1653426777 c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\tresenraya.h
+
+1653499653 source:c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\instrucciones.c
+	<stdio.h>
+	<string.h>
+
+1653426777 source:c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\login.c
+	<stdio.h>
+	<string.h>
+
+1653582210 source:c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"instrucciones.h"
+	"login.h"
+	"facil.h"
+	"dificil.h"
+
+1653426777 c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\instrucciones.h
+
+1653426777 c:\users\roberto\documents\github\twe100_2122-galaxy-kebab\programa final\login.h
+
